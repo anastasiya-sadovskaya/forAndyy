@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            .gif{
+                position: absolute;
+                top: -20px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            div{
+                line-height: 1.5;
+            }
+
+            button{
+                margin-top: 40px;
+                padding: 10px;
+                background-color: #a2cf99;
+                color: #284721;
+            }
+
+            #ask_nastya{
+                display: none;
+            }
+
+            .visible{
+                display: block!important;
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+        <script>
+            function clickHandler(){
+                document.getElementById("ask_nastya").classList = 'visible';
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>Hello, Andrey!</div>
+        <div>Do you want some html and js for your project? <img class='gif' src='./brows.gif' /></div>
+        <button id='yes_btn' onClick='clickHandler()'>Yeeeeeeep!</button>
+        <div id='ask_nastya'> Ask Nastya!</div>
+    </body>
+</html>
